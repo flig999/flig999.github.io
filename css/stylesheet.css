@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(163, 241, 110);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#body {
+    max-width: 800px;
+    margin: 0 auto;
+}
+header, footer {
+    background-color: midnightblue;
+    color: white;
+    padding: 6px;
+    border-radius: 10px;
+}
+
+header h1 {
+    font-size: 40px;
+    padding-left: 100px; 
+}
+main {
+    padding: 0 15px;
+}
+main h2{
+    border-bottom: 1px solid black;
+}
+.pic {
+    float: right;
+    box-shadow: 0 0 16px black;
+}
+footer a, footer a:link, footer a:visited, footer a:active, footer a:focus {
+    color: white;
+}
+footer a:hover{
+    color:beige;
+}
+footer {
+    clear: both;
+    text-align: center;
+}
+footer p.footer {
+    margin-bottom: 6px;
+    font-size: 18px;
+}
+footer p.footer2{
+    color: yellow;
+    font-size: 14px;
+    margin-top: 0px;
+}
