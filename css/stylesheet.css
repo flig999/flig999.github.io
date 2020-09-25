@@ -15,16 +15,17 @@ header, footer {
 
 header h1 {
     font-size: 40px;
-    padding-left: 100px; 
+    padding-left: 100px;
+    font-family: 'Montserrat', sans-serif; 
 }
 main {
     padding: 0 15px;
 }
 main h2{
     border-bottom: 1px solid black;
+    font-family: 'Montserrat', sans-serif;
 }
 .pic {
-    float: right;
     box-shadow: 0 0 16px black;
 }
 footer a, footer a:link, footer a:visited, footer a:active, footer a:focus {
