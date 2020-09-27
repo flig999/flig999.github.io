@@ -1,0 +1,66 @@
+img {
+    height: auto;
+    max-width: 100%;
+}
+main {
+    display: grid;
+}
+div{
+    border: solid 2px black;
+    border-radius: 10px;
+    margin: 6px;
+}
+p{
+    font-family: 'Raleway', sans-serif;
+}
+h2{
+    font-family: 'Secular One', sans-serif;
+    background-color: lightcyan;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 0px;
+    padding: 3px;
+}
+h3{
+    font-family: 'Secular One', sans-serif;
+    padding-left:  5px;
+}
+header {
+    text-align: center;
+    background-color: lightblue;
+}
+@media only screen and (min-width: 45.5em) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+@media only screen and (min-width: 70.5em) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+footer a, footer a:link, footer a:visited, footer a:active, footer a:focus {
+    color: white;
+}
+footer a:hover{
+    color:beige;
+}
+footer {
+    clear: both;
+    text-align: center;
+    background-color: darkblue;
+    color: darkgray;
+}
+footer p.footer {
+    margin-bottom: 6px;
+    font-size: 18px;
+}
+footer p.footer2{
+    color: yellow;
+    font-size: 14px;
+    margin-top: 0px;
+}
