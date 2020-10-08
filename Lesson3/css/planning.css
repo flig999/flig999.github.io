@@ -1,0 +1,129 @@
+img{
+    height: 200px;
+    width: 200px;
+}
+nav{
+   background-color: gray;
+   text-align: center;
+   box-shadow: 0 2px 15px lightblue;
+   margin: 0 auto;
+   max-width: 1000px;
+   
+}
+footer{
+    background-color: gray;
+   text-align: center;
+   box-shadow: 0 2px 15px lightblue;
+   margin: 0 auto;
+   max-width: 1000px;
+   padding: 20px;
+}
+footer p.footer2{
+    color: darkorange;
+    font-size: 14px;
+    margin-top: 0px;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+nav a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: darkorange;
+}
+.navexample{
+    color:darkorange;
+    background-color: gray;
+    text-align: center;
+    font-size: 20px;
+}
+nav a:hover{
+    background-color: black;
+}
+h1 {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 40px;
+}
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+}
+p {
+    font-size: 15px;
+}
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: lightgray;
+    
+}
+main{
+    background-color: darkgray;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.colorgrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    border: black;
+}
+.typographygrid{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+.border{
+    border: black;
+    border-style: solid;
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+}
+.gridrow {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: black;
+    text-align: center;
+}
+.gray{
+    background-color: gray;
+    border: black;
+    border-style: solid;
+    margin: 0;
+    height: 50px;
+}
+.lightgray{
+    background-color: lightgray;
+    border: black;
+    border-style: solid;
+    margin: 0;
+    height: 50px;
+
+}
+.darkgray{
+    background-color: darkgrey;
+    border: black;
+    border-style: solid;
+    margin: 0;
+    height: 50px;
+}
+.darkorange{
+    background-color: darkorange;
+    border: black;
+    border-style: solid;
+    margin: 0;
+    height: 50px;
+}
+
+@media only screen and (min-width: 45.5em) {
+    nav ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
