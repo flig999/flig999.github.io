@@ -1,32 +1,76 @@
 <!DOCTYPE html>
 <html lang='en-us'>
     <head>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto+Mono&display=swap" rel="stylesheet">
         <title>WDD 230 Lucas Burke</title>
         <meta charset="utf-8">
         <meta name="description" content="First assignment for 230">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-        <link rel="stylesheet" href="css/stylesheet.css">
-        <script src="scripts/page.js"></script>
+        <link rel="stylesheet" href="css/preston.css">
+        <script src="js/page.js"></script>
         <meta name="viewport" content="width-device-width, initial-scale-1.0">
     </head>
     <body>
-        <header></header>
+        <header>
+            <div><img class="logo" src="images/iconfinder_weather-rainy_6351951.png" alt="logo"></div>
+            <div>
+                <h1 class="headerText">Don't weather the weather</h1>
+                <p class="headerText">Know before you go</p>
+            </div>
+            
+        </header>
         <nav>
-            <ul>
-                <li>menu</li>
-                <li>Home</li>
-                <li>Preston</li>
-                <li>Soda Springs</li>
-                <li>Fish Haven</li>
-                <li>Storm Center</li>
-                <li>Gallery</li>
+            <ul class="navigation">
+        		<li><a class="ham" href="#">&#9776;</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
             </ul>
         </nav>
         <main>
+            <h1>Preston Idaho</h1>
+            <div>
+                <img src="#" alt="hero image">
+            </div>
+            <div>
+                <h2>Weather Summary</h2>
+                <p>PLACEHOLDER TEXT PLACEHOLDER TEXT PLACEHOLDER TEXT PLACEHOLDER TEXT 
+                    PLACEHOLDER TEXT PLACEHOLDER TEXT PLACEHOLDER TEXT PLACEHOLDER TEXT 
+                    PLACEHOLDER TEXT PLACEHOLDER TEXT PLACEHOLDER TEXT PLACEHOLDER TEXT 
+                    PLACEHOLDER TEXT PLACEHOLDER TEXT PLACEHOLDER TEXT PLACEHOLDER TEXT</p>
+            </div>
+            <div>
+                <h2>Five Day Forecast</h2>
+            </div>
+            <div>
+                <h2>Article Title</h2>
+                <p>PLACEHOLDER TEXT PLACEHOLDER TEXT PLACEHOLDER TEXT PLACEHOLDER TEXT 
+                    PLACEHOLDER TEXT PLACEHOLDER TEXT PLACEHOLDER TEXT PLACEHOLDER TEXT 
+                    PLACEHOLDER TEXT PLACEHOLDER TEXT PLACEHOLDER TEXT PLACEHOLDER TEXT 
+                    PLACEHOLDER TEXT PLACEHOLDER TEXT PLACEHOLDER TEXT PLACEHOLDER TEXT</p>
+                <img src="#" alt="Article image">
+            </div>
         </main>
         <footer>
-
+            <div class="desktopGrid">
+                <div class="swap">
+                    <h2>Contact Information</h2>
+                    <p> &#9993; Email Address</p>
+                    <p> &#9742; Telephone Number</p>
+                    <div class="socialgrid">
+                        <img class="social" src="#" alt="Social Media ">
+                        <img class="social" src="#" alt="Social Media ">
+                        <img class="social" src="#" alt="Social Media ">
+                    </div>
+                </div>
+                <img class="map" src="#" alt="Map image">
+            </div>
+            <p class="footer2"><span id="weekday"></span>, <span id="dayofmonth"></span> <span id="month"></span> <span id="year"></span></p>
+            <p>&copy; <span id="copyRightYear"></span>| Lucas T. Burke | Idaho | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+            <p class="footer2">Last Updated: <span id="lastUpdated"></span></p>
         </footer>
     </body>
 </html>
