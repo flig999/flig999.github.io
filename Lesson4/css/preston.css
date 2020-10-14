@@ -1,4 +1,5 @@
 /* Small/Phone View ***************/
+
 header{
     display: grid;
     grid-template-columns: 110px 1fr;
@@ -99,6 +100,15 @@ main{
 }
 .social{
     display: none;
+}
+
+#banner{
+    background-color: red;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: dashed;
+    font-size: 20px;
 }
 
 /* Media Query for medium+ views */

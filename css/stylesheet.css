@@ -1,3 +1,12 @@
+#banner{
+    background-color: red;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: dashed;
+    font-size: 20px;
+    font-style: italic;
+}
 body {
     background-color: rgb(163, 241, 110);
     font-family: Georgia, 'Times New Roman', Times, serif;
