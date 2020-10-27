@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!-- html is the root element-->
+<html lang='en-us'>
+    <!-- head is usually the first element-->
+    <head>
+        <!-- title is another form of element, and "presentation Example" is its text -->
+        <title>Presentation Example</title>
+        <!-- charset is an attribute of the meta element-->
+        <meta charset="utf-8">
+        <meta name="description" content="js presentation worksheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="css/stylesheet.css">
+        <script src="js/js.js"></script>
+        <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    </head>
+    <body>
+        <h1 id="first">This is an H1 element, and we can see its text</h1>
+
+        <img id="pic" src="yeet.jpg" alt="oops">
+        <script>
+            document.getElementById("pic").src = "images/real.jpg";
+        </script>
+        <button type="button" onclick="ChangeText(this)">Im a button</button>
+    </body>
+</html>

@@ -4,4 +4,7 @@ window.addEventListener('load', (event)=>{
 
     const cry = document.querySelector("#copyRightYear");
     cry.textContent = new Date().getFullYear();
+
+    const ban = document.querySelector("#banner");
+    const x = document.querySelector("#closebutton");
 })
