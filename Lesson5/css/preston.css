@@ -135,6 +135,9 @@ main{
 }
 /* Media Query for medium+ views */
 @media only screen and (min-width: 32.5em) {
+    #five-day{
+        display: block;
+    }
     #five-day-grid{
         display: grid;
         grid-template-columns: repeat(5, 1fr);
@@ -207,6 +210,9 @@ main{
 }
 
 @media only screen and (min-width: 70.5em) {
+    #five-day{
+        display: block;
+    }
     #five-day-grid{
         display: grid;
         grid-template-columns: repeat(5, 1fr);
