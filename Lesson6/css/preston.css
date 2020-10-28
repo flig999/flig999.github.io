@@ -1,0 +1,273 @@
+/* Small/Phone View ***************/
+
+header{
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    margin: 0 auto;
+	
+}
+nav {
+	margin: 0 auto;
+	background-color: tomato;
+}
+.navigation {
+	list-style: none;
+	padding: 0;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+nav a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 25px;
+    color: darkorange;
+}
+nav a:hover{
+    background-color: black;
+}
+nav{
+    background-color: gray;
+    text-align: center;
+    box-shadow: 0 2px 15px lightblue;
+    margin: 0 auto;
+ }
+ footer{
+    background-color: gray;
+   text-align: center;
+   box-shadow: 0 2px 15px lightblue;
+   margin: 0 auto;
+   
+   padding: 20px;
+}
+footer p.footer2{
+    color: darkorange;
+    font-size: 14px;
+    margin-top: 0px;
+}
+h1 {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 40px;
+}
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+}
+p {
+    font-size: 15px;
+}
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: lightgray;
+    
+}
+main{
+    background-color: darkgray;
+    
+    margin: 0 auto;
+    padding: 20px;
+}
+.logo{
+    max-width: 100px;
+    max-height: 100px;
+}
+/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
+  <ul class="navigation responsive">
+*/
+.responsive li {
+	display: block;
+}
+.headerText{
+    text-align: left;
+}
+.social{
+    display: none;
+}
+
+#banner{
+    background-color: red;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: dashed;
+    font-size: 20px;
+    display: none;
+}
+#active{
+    color: lightcoral;
+    -webkit-text-stroke: .1px darkorange;
+    -webkit-text-fill-color: gray;
+}
+#hero{
+    max-width: 100%; 
+}
+#five-day{
+    display: none;
+}
+
+#article-image{
+    display: none;
+    max-width: 100%;
+}
+#article-image-mobile{
+    max-width: 100%;
+}
+.map{
+    display: none;
+}
+/* Media Query for medium+ views */
+@media only screen and (min-width: 32.5em) {
+    #five-day-grid{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .day{
+        background-color: gray;
+        text-align: center;
+    }
+    .data{
+        text-align: center;
+    }
+    #hero-grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    #hero{
+        grid-column: 1/-1;
+        grid-row: 1/-1;
+    }
+    #weather-summary{
+        padding-left: 10px;
+        margin-left: 50px;
+        margin-top: 50px;
+        background-color: gray;
+        opacity: .8;
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    #article-image{
+        display: block;
+        float: right;
+        max-width: 200px;
+    }
+    #article-image-mobile{
+        display: none;
+    }
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+    }
+    .social{
+        display: inline;
+    }
+    .desktopGrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .swap{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row: 1;
+    }
+    .map{
+        max-width: 100%;
+        display: block;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row: 1;
+    }
+}
+
+@media only screen and (min-width: 70.5em) {
+    #five-day-grid{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .day{
+        background-color: gray;
+        text-align: center;
+    }
+    .data{
+        text-align: center;
+    }
+    #article-image{
+        display: block;
+        float: right;
+        max-width: 300px;
+    }
+    #article-image-mobile{
+        display: none;
+    }
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+    }
+    header{
+        max-width: 960px;
+    }
+    nav{
+        max-width: 1000px;
+    }
+    main{
+        max-width: 1000px;
+    }
+    footer{
+        max-width: 1000px;
+    }
+    .social{
+        display: inline;
+    }
+    .desktopGrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .swap{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row: 1;
+    }
+    .map{
+        max-width: 100%;
+        display: block;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row: 1;
+    }
+}
