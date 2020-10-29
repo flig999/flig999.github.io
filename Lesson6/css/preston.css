@@ -116,8 +116,8 @@ main{
     -webkit-text-stroke: .1px darkorange;
     -webkit-text-fill-color: gray;
 }
-#hero{
-    max-width: 100%; 
+.hero{
+    width: 100%; 
 }
 #five-day{
     display: none;
