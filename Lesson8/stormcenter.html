@@ -34,7 +34,7 @@
         <main>
             <form method="GET" action="thanks.html">
                 <label for="fullName">
-                    <input id="fullName" type="text" name="fullName" required> Full Name*<br> <!-- add reg expression -->
+                    <input id="fullName" type="text" name="fullName" required pattern="[A-Za-z ]{5,}"> Full Name*<br> <!-- add reg expression -->
                 </label>
                 <label for="email">
                   <input id="email" type="email" name="email" placeholder="example@email.com"> Email<br>
