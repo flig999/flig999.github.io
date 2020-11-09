@@ -1,0 +1,33 @@
+.cards{
+    display: grid;
+    grid-gap: 5px;
+    background-color: lightgray;
+    padding: 10px;
+}
+h2{
+    color: darkblue;
+}
+h1{
+    color: darkblue;
+    text-align: center;
+}
+img{
+    width: 180px;
+    box-shadow: 10px 10px 10px; 
+}
+section{
+    text-align: center;
+    background-color: rgb(114, 135, 151); 
+    border: blue solid 1px;
+    padding: 10px;
+}
+@media only screen and (min-width: 32.5em) {
+    .cards{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (min-width: 70.5em) {
+    .cards{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
