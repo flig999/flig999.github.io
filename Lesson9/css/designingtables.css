@@ -1,0 +1,29 @@
+body{
+    font-family: 'lato', sans-serif;
+}
+thead td:nth-child(odd), tfoot td:nth-child(odd){
+    background-color: #95d600;
+}
+table{
+    border-collapse: collapse;
+}
+tbody tr:nth-child(odd){
+    background-color: rgba(137,171,188,1);
+}
+#playertable td.lightergray{
+    background-color: rgba(137,171,188,.5);
+}
+tbody tr:nth-child(even){
+    background-color: rgba(0, 77, 113, 1);   
+}
+.lighterblue{
+    background-color: rgba(0, 77, 113, .5);
+}
+thead td:nth-child(even), tfoot td:nth-child(even){
+    background-color: rgba(149, 214, 0, .5);
+}
+
+#teamgrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
