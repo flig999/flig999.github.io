@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+    <head>
+        <title>WDD 230 Lucas Burke</title>
+        <meta charset="utf-8">
+        <meta name="description" content="First assignment for 230">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="../ShellFiles/weather_site.css">
+        <link rel="stylesheet" href="css/stylesheet9.css">
+        <script src="js/js9.js"></script>
+        <script src="../ShellFiles/weather_java.js"></script>
+        <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    </head>
+    <body>
+        <header>
+            <div><img class="logo" src="../ShellFiles/images/iconfinder_weather-rainy_6351951.png" alt="logo"></div>
+            <div>
+                <h1 class="headerText">Don't Weather the Weather</h1>
+                <p class="headerText">Know before you go</p>
+            </div>
+            
+        </header>
+        <nav>
+            <ul class="navigation">
+        		<li><a class="ham" href="#">&#9776;</a></li>
+                <li><a href="#" id="active">Home</a></li>
+                <li><a href="../Lesson6/preston-6.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="../Lesson8/stormcenter.html">Storm Center</a></li>
+                <li><a href="../Lesson7/gallery-7.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="indexTowns"></div>
+        </main>
+        <footer>
+            <div class="desktopGrid">
+                <div class="swap">
+                    <h2>Contact Information</h2>
+                    <p> &#9993; Email Address</p>
+                    <p> &#9742; Telephone Number</p>
+                    <div class="socialgrid">
+                        <img class="social" src="../ShellFiles/images/youtube.png" alt="Social Media ">
+                        <img class="social" src="../ShellFiles/images/twitter.png" alt="Social Media ">
+                        <img class="social" src="../ShellFiles/images/facebook.png" alt="Social Media ">
+                    </div>
+                </div>
+                <img class="map" src="../ShellFiles/images/map-resize.jpg" alt="Home Office">
+            </div>
+            <p class="footer2"><span id="weekday"></span>, <span id="dayofmonth"></span> <span id="month"></span> <span id="year"></span></p>
+            <p>&copy; <span id="copyRightYear"></span>| Lucas T. Burke | Idaho | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+            <p class="footer2">Last Updated: <span id="lastUpdated"></span></p>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>
+            WebFont.load({
+              google: {
+                  families: [
+                      'Oswald','Roboto Mono'
+                  ]
+               }
+            })
+        </script>
+    </body>
+</html>

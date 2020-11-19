@@ -1,0 +1,58 @@
+.indexTowns{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+}
+section{
+    background-color: darkorange;
+    display: grid;
+    align-items: center;
+}
+.town{
+    max-height: 90%;
+    max-width: 95%;
+    text-align: center;
+    justify-self: center;
+}
+.towntext{
+    text-align: center;
+    justify-self: center;
+}
+h6{
+    margin-top: 0px;
+}
+h2{
+    margin-bottom: 0px;
+}
+@media only screen and (min-width: 32.5em) {
+    section{
+        grid-template-columns: 1fr 1fr;
+    }
+    section:nth-of-type(even) .towntext{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    section:nth-of-type(even) .town{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+
+}
+
+@media only screen and (min-width: 70.5em) {
+    section{
+        grid-template-columns: 1fr;
+    }
+    .indexTowns{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    section:nth-of-type(even) .towntext{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    section:nth-of-type(even) .town{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+}

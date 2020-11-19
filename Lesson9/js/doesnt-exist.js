@@ -1,9 +1,7 @@
 // The url for the json file
 const requestURL = 'https://www.ahfx.com/person.php';
 let h = new Headers({
-    "Accept": "application/json", 
-    "User-Agent": "WDD-230 Test User Agent https://flig999.github.io",
-    "Access-Control-Allow-Origin": "no-cors"
+   
 });
 
 // requests (fetches) the json file
@@ -27,11 +25,11 @@ fetch(requestURL, {headers:h})
             let city = document.createElement('p');
             let children = document.createElement('p');
             let ip = document.createElement('p');
-            h2.textContent = person.personal.name + ' ' + person.personal.lastname;
+            h2.textContent = person.personal.name + ' ' + person.personal.last_name;
             image.setAttribute('src', 'https://thispersondoesnotexist.com/image');
-            password.textContent = 'Email: ' + person.online_info.password;
+            password.textContent = 'Password: ' + person.online_info.password;
             email.textContent = 'Email: ' + person.online_info.email;
-            eyes.textContent = 'Eye Color: ' + person.personal.eyecolor;
+            eyes.textContent = 'Eye Color: ' + person.personal.eye_color;
             city.textContent = 'City Country: ' + person.personal.city + ' ' + person.personal.country;
             children.textContent = 'Number of Children: ' + person.marriage.children;
             ip.textContent = 'IP Address: ' + person.online_info.ip_address;
