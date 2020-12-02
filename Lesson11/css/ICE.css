@@ -1,0 +1,71 @@
+
+.event {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    max-width: 800px;
+    margin: 0 auto;
+}
+h1 {
+    margin: 0 auto;
+}
+.event-info{
+    padding-top: -2em;
+}
+span {
+    margin: 0 0 0 0;
+}
+p {
+    display: block;
+    color: white;
+}
+h3 {
+    color: white;
+}
+.date {
+    justify-self: center;
+}
+h2 {
+    font-size: 3.5em;
+    margin: 0 0 0 0;
+    color: white;
+}
+.gmt{
+    color: grey;
+}
+.green{
+    background-color: rgb(71, 216, 71);
+    color:white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.pink{
+    background-color: salmon;
+    padding: 10px;
+    border-radius: 10px;
+}
+.yellow{
+    background-color: rgb(241, 241, 66);
+    padding: 10px;
+    border-radius: 10px;
+}
+.orange {
+    background-color: orange;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+.lightblue{
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 10px;
+}
+.blue {
+    background-color: blue;
+    padding: 10px;
+    border-radius: 10px;
+}
+.darkgreen {
+    background-color:forestgreen;
+    padding: 10px;
+    border-radius: 10px;
+}
