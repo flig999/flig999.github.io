@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+    <head>
+        <!--<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto+Mono&display=swap" rel="stylesheet">
+        -->
+        <title>WDD 230 Lucas Burke</title>
+        <meta charset="utf-8">
+        <meta name="description" content="First assignment for 230">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="css/preston.css">
+        <link rel="shortcut icon" href="../images/favicon.ico">
+        <script src="js/page.js"></script>
+        <script src="js/windchill.js"></script>
+        <script src="js/fish.js"></script>
+        <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    </head>
+    <body>
+        <header>
+            <div><img class="logo" src="images/iconfinder_weather-rainy_6351951.png" alt="logo"></div>
+            <div>
+                <h1 class="headerText">Don't Weather the Weather</h1>
+                <p class="headerText">Know before you go</p>
+            </div>
+            
+        </header>
+        <nav>
+            <ul class="navigation">
+        		<li><a class="ham" href="#">&#9776;</a></li>
+                <li><a href="/Lesson9/index.html">Home</a></li>
+                <li><a href="/Lesson11/preston-11.html">Preston</a></li>
+                <li><a href="/Lesson11/soda-springs-11.html">Soda Springs</a></li>
+                <li><a href="/Lesson11/fish-haven-11.html" id="active">Fish Haven</a></li>
+                <li><a href="/Lesson8/stormcenter.html">Storm Center</a></li>
+                <li><a href="/Lesson7/gallery-7.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Fish Haven Idaho</h1>
+            <div id="hero-grid">
+                <picture id="hero">
+                    <source class="hero" srcset="images/fishhaven_medium.jpg" media="(min-width:500px) and (max-width:999px)">
+                    <source class="hero" srcset="images/fishhaven_large.jpg" media="(min-width:1000px)">
+                    <img class="hero" src="images/fishhaven.jpg" alt="hero image">
+                </picture>
+                <div id="weather-summary">
+                <h2>Weather Summary</h2>
+                <p>Currently: Sunny <br>
+                    high: <span id="temp-value">Loading...</span>F<br>
+                    Wind Chill: <span id="windchill-value">Loading...</span><br>
+                    Humidity: <span id="humidity-value">Loading...</span>%<br>
+                    Wind Speed: <span id="windspeed-value">Loading...</span> mph</p>
+                </div>
+            </div>
+            <div id="events">
+                <h2>Upcoming Events</h2>
+                <div id="events-data"></div>
+            </div>
+            <div id="five-day">
+                <h2>Five Day Forecast</h2>
+                <div id="five-day-grid">
+                    <div class="day" id="day1">Loading...</div>
+                    <div class="day" id="day2">Loading...</div>
+                    <div class="day" id="day3">Loading...</div>
+                    <div class="day" id="day4">Loading...</div>
+                    <div class="day" id="day5">Loading...</div>
+                    <div class="data" id="day1-data">Loading...</div>
+                    <div class="data" id="day2-data">Loading...</div>
+                    <div class="data" id="day3-data">Loading...</div>
+                    <div class="data" id="day4-data">Loading...</div>
+                    <div class="data" id="day5-data">Loading...</div>
+                </div>
+            </div>
+            <div style="overflow: hidden;">
+                
+                <h2>Phootography Winner!</h2>
+                <img id="article-image" src="images/fish-story.jpg" alt="Article image">
+                <p>Local photographer Johny Depp was the winner of the photography contest we had last month! His photo was the 
+                    most voted for in the category of wildlife and we can see why! His photo of a european bee eater is completely 
+                    stunning and while we aren't 100% sure if it was taken locally, we never said it had to be done so in the 
+                    rules so make sure to congradulate our winner if you see him around!
+                </p>
+                <img id="article-image-mobile" src="images/fish-story.jpg" alt="Article image">
+                
+            </div>
+        </main>
+        <footer>
+            <div class="desktopGrid">
+                <div class="swap">
+                    <h2>Contact Information</h2>
+                    <p> &#9993; Email Address</p>
+                    <p> &#9742; Telephone Number</p>
+                    <div class="socialgrid">
+                        <img class="social" src="images/youtube.png" alt="Social Media ">
+                        <img class="social" src="images/twitter.png" alt="Social Media ">
+                        <img class="social" src="images/facebook.png" alt="Social Media ">
+                    </div>
+                </div>
+                <img class="map" src="images/map-resize.jpg" alt="Home Office">
+            </div>
+            <p>All weather data provided by <a href="https://openweathermap.org/">OpenWeatherMap.com</a></p>
+            <p class="footer2"><span id="weekday"></span>, <span id="dayofmonth"></span> <span id="month"></span> <span id="year"></span></p>
+            <p>&copy; <span id="copyRightYear"></span>| Lucas T. Burke | Idaho | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+            <p class="footer2">Last Updated: <span id="lastUpdated"></span></p>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>
+            WebFont.load({
+              google: {
+                  families: [
+                      'Oswald','Roboto Mono'
+                  ]
+               }
+            })
+        </script>
+    </body>
+</html>
