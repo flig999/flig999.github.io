@@ -44,7 +44,7 @@ fetch(templeURL)
             image.setAttribute('src', 'images/' + temples[i].image);
             image.setAttribute('class', 'templeimage');
 
-            fetch(temple[i].weather)
+            fetch(temples[i].weather)
             .then((response) => response.json())
   
             .then((jsObject) => {
