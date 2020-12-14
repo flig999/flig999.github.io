@@ -19,6 +19,7 @@ fetch(templeURL)
             let ordinance = document.createElement('p');
             let session = document.createElement('p');
             let closure = document.createElement('p');
+            let image = document.createElement("img");
             temple.textContent = temples[i].name;
             address.textContent = "Address: " + temples[i].address;
             telephone.textContent = "Phone Number: " + temples[i].phone;
@@ -28,6 +29,8 @@ fetch(templeURL)
             ordinance.textContent = "Ordinance Schedule: " + temples[i].ordinance;
             session.textContent = "Session Schedule: " + temples[i].session;
             closure.textContent = "Closure Schedule: " + temples[i].closure;
+            image.setAttribute('src', 'images/' + temples[i].image);
+            image.setAttribute('class', 'town');
             card.appendChild(temple);
             card.appendChild(address);
             card.appendChild(telephone);
@@ -37,6 +40,7 @@ fetch(templeURL)
             card.appendChild(ordinance);
             card.appendChild(session);
             card.appendChild(closure);
+            card.appendChild(image);
             document.getElementById('temples').appendChild(card);
         }
     });

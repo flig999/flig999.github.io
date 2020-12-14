@@ -9,7 +9,8 @@
             "history": "18 November 2001 - Dedicated",
             "ordinance": "We're open for walk in Ordinances from 5am to 8pm Mon-Sat",
             "session": "Call for more information",
-            "closure": "Temple closed today for any walk-ins"
+            "closure": "Temple closed today for any walk-ins",
+            "image": "columbia_river_temple_lds.jpg"
         },
         {
             "name": "Dallas Texas",
@@ -20,7 +21,8 @@
             "history": "5 March 1989 - Rededicated",
             "ordinance": "We're open for walk in Ordinances from 6am to 8pm Mon-Sat",
             "session": "Call for more information",
-            "closure": "Temple closed today"
+            "closure": "Temple closed today",
+            "image": "dallas_texas_temple.jpeg"
         },
         {
             "name": "Fort Lauderdale Florida",
@@ -31,7 +33,8 @@
             "history": "4 May 2014 - Dedicated",
             "ordinance": "We're open for walk in Ordinances from 7am to 9pm Mon-Sat",
             "session": "Call for more information",
-            "closure": "Temple closed today"
+            "closure": "Temple closed today",
+            "image": "fort_lauderdale_florida_temple_lighted.jpeg"
         },
         {
             "name": "Hartford Connecticut",
@@ -42,7 +45,8 @@
             "history": "20 November 2016 - Dedicated ",
             "ordinance": "We're open for walk in Ordinances from 8am to 11pm Mon-Sat",
             "session": "Call for more information",
-            "closure": "Temple closed today unless scheduled ahead"
+            "closure": "Temple closed today unless scheduled ahead",
+            "image": "hartford_connecticut_temples_exterior_steeples_clouds.jpeg"
         }
     ]
 }

@@ -98,6 +98,12 @@ section h2{
 section p{
 	margin-left: 5px;
 }
+footer h2{
+	text-align: center;
+}
+section image{
+	float: right;
+}
 
 @media only screen and (min-width: 32.5em) {
     .navigation {
