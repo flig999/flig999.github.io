@@ -42,19 +42,33 @@ nav{
     background-color: lightblue;
 }
 main{
-    background-color: white;
+    background-color: lightcyan;
     margin: 0 auto;
 	padding: 20px;
 	font-family: 'Antic Slab', serif;
 }
+footer{
+	margin: 0 auto;
+	background-color: lightgray;
+	padding: 20px;
+}
+body{
+	background-color:  rgb(173, 146, 235);
+}
 header{
     display: grid;
-    grid-template-columns: 110px 1fr;
-    margin: 0 auto;	
+    grid-template-columns: 140px 1fr;
+	margin: 0 auto;	
+	justify-content: center;
+}
+.headerText{
+	margin-left: 10px;
+	text-align: left;
 }
 h1{
 	font-family: 'Dancing Script', cursive;
 	font-size: 45px;
+	text-align: center;
 }
 h2{
 	font-family: 'Dancing Script', cursive;
@@ -71,6 +85,18 @@ form{
 form :nth-child(even){
 	margin-top: 10px;
 	margin-bottom: 10px;
+}
+section{
+	background-color: lightblue;
+	border: 1px solid;
+	border-radius: 15px;
+	margin: 10px;
+}
+section h2{
+	margin-left: 5px;
+}
+section p{
+	margin-left: 5px;
 }
 
 @media only screen and (min-width: 32.5em) {
@@ -118,5 +144,8 @@ form :nth-child(even){
 	}
 	header{
         max-width: 1000px;
-    }
+	}
+	footer{
+		max-width: 1000px;
+	}
 }

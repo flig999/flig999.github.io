@@ -1,48 +1,48 @@
 {
-    "temples":[
+    "temples": [
         {
             "name": "Columbia River Washington",
             "address": "969 Gage Blvd, Richland, WA, 99352-7777, United States",
             "phone": "509-628-0990",
-            "email": "test",
+            "email": "CRWTemple@fake.com",
             "services": "Distribution Center Nearby",
-            "history": "test",
-            "ordinance": "test",
-            "session": "test",
-            "closure": "test"
+            "history": "18 November 2001 - Dedicated",
+            "ordinance": "We're open for walk in Ordinances from 5am to 8pm Mon-Sat",
+            "session": "Call for more information",
+            "closure": "Temple closed today for any walk-ins"
         },
         {
             "name": "Dallas Texas",
             "address": "6363 Willow Ln, Dallas, TX, 75230-2227, United States",
             "phone": "972-991-1273",
-            "email": "test",
+            "email": "DTTemple@fake.com",
             "services": "Clothing rental available, Distribution Center Nearby",
-            "history": "test",
-            "ordinance": "test",
-            "session": "test",
-            "closure": "test"
+            "history": "5 March 1989 - Rededicated",
+            "ordinance": "We're open for walk in Ordinances from 6am to 8pm Mon-Sat",
+            "session": "Call for more information",
+            "closure": "Temple closed today"
         },
         {
             "name": "Fort Lauderdale Florida",
             "address": "3901 SW 154th Ave, Davie, FL, 33331, United States",
             "phone": "954-382-8390",
-            "email": "test",
+            "email": "FLFTemple@fake.com",
             "services": "N/A",
-            "history": "test",
-            "ordinance": "test",
-            "session": "test",
-            "closure": "test"
+            "history": "4 May 2014 - Dedicated",
+            "ordinance": "We're open for walk in Ordinances from 7am to 9pm Mon-Sat",
+            "session": "Call for more information",
+            "closure": "Temple closed today"
         },
         {
             "name": "Hartford Connecticut",
             "address": "2 Central Wy, Farmington, CT, 06032, United States",
             "phone": "860-773-7200",
-            "email": "test",
+            "email": "HCTemple@fake.com",
             "services": "Distribution center nearby",
-            "history": "test",
-            "ordinance": "test",
-            "session": "test",
-            "closure": "test"
+            "history": "20 November 2016 - Dedicated ",
+            "ordinance": "We're open for walk in Ordinances from 8am to 11pm Mon-Sat",
+            "session": "Call for more information",
+            "closure": "Temple closed today unless scheduled ahead"
         }
     ]
 }

@@ -6,11 +6,8 @@ fetch(templeURL)
         return response.json();
     })
     .then(function (jsonObject) {
-        console.table(jsonObject); // temporary checking for valid response and data parsing
-
         // store results in an array
-        const temples = jsonObject;
-
+        const temples = jsonObject["temples"];
         for (let i = 0; i < temples.length; i++) {
             let card = document.createElement('section');
             let temple = document.createElement('h2');
@@ -23,14 +20,14 @@ fetch(templeURL)
             let session = document.createElement('p');
             let closure = document.createElement('p');
             temple.textContent = temples[i].name;
-            address.textContent = temples[i].address;
-            telephone.textContent = temples[i].telephone;
-            email.textContent = temples[i].email;
-            services.textContent = temples[i].services;
-            history.textContent = temples[i].history;
-            ordinance.textContent = temples[i].ordinance;
-            session.textContent = temples[i].session;
-            closure.textContent = temples[i].closure;
+            address.textContent = "Address: " + temples[i].address;
+            telephone.textContent = "Phone Number: " + temples[i].phone;
+            email.textContent = "Email Address: " + temples[i].email;
+            services.textContent = "Services: " + temples[i].services;
+            history.textContent = "History: " + temples[i].history;
+            ordinance.textContent = "Ordinance Schedule: " + temples[i].ordinance;
+            session.textContent = "Session Schedule: " + temples[i].session;
+            closure.textContent = "Closure Schedule: " + temples[i].closure;
             card.appendChild(temple);
             card.appendChild(address);
             card.appendChild(telephone);
@@ -40,6 +37,6 @@ fetch(templeURL)
             card.appendChild(ordinance);
             card.appendChild(session);
             card.appendChild(closure);
-            document.querySelector('div.temples').appendChild(card);
+            document.getElementById('temples').appendChild(card);
         }
     });
