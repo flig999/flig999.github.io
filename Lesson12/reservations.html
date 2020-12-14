@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+    <head>
+        <title>Reservations</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Final Project">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="css/final.css">
+        <script src="js/final.js"></script>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Antic+Slab&family=Dancing+Script:wght@600&display=swap');
+        </style>
+        <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    </head>
+    <body>
+        <header>
+            <div><img class="logo" src="REPLACE.jpg" alt="logo"></div>
+            <div>
+                <h1 class="headerText">Temple Inn & Suites</h1>
+                <h2 class="headerText">Our service to help you serve</h2>
+            </div>
+            
+        </header>
+        <nav>
+            <ul class="navigation">
+        		<li><a class="ham" href="#">&#9776;</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="temples.html">Temples</a></li>
+                <li><a href="reservations.html" id="active">Reservations</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <main>
+            <form method="GET" action="thanks.html">
+                <label for="fullName">
+                    <input id="fullName" type="text" name="fullName" required pattern="[A-Za-z ]{5,}"> Full Name*<br> 
+                </label>
+                <label for="email">
+                  <input id="email" type="email" name="email" placeholder="example@email.com"> Email<br>
+                </label>
+                <label for="phoneNumber">
+                  <input id="phoneNumber" type="tel" name="phoneNumber" required> Phone Number*<br>
+                </label>
+                <label for="home">
+                    <input id="home" type="text" name="home"> Home State/Country<br> 
+                </label>
+                <label for="temple">
+                    <input id="temple" list="temples" name="temple" placeholder="Select Temple..."> Which temple are you visiting? <br>
+                </label>
+                <label for="date">
+                    <input id="date" type="date" name="date"> When will you be visiting?<br>
+                </label>
+                <div>
+                  What type of room will you need?? <br>
+                </div>
+                    <label for="single">
+                        <input id="single" type="radio" name="room" value="single"> Single Bed <br>
+                    </label>
+                    <label for="two">
+                        <input id="two" type="radio" name="room" value="two"> Two Bed<br>
+                    </label>
+                    <label for="length">
+                        <input id="length" type="number" name="length" required> How long will you be staying?<br>
+                    </label>
+                <label for="comments">
+                    Any additional accommodations or comments?<br>
+                    <textarea id="comments" name="comments"></textarea><br>
+                </label>
+                <input type="submit">  
+                <datalist id="temples">
+                    <option value="Columbia River Washington">
+                    <option value="Dallas Texas">
+                    <option value="Fort Lauderdale Florida">
+                    <option value="Hartford Connecticut">
+                </datalist>
+            </form>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>

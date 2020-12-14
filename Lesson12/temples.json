@@ -1,0 +1,48 @@
+{
+    "temples":[
+        {
+            "name": "Columbia River Washington",
+            "address": "969 Gage Blvd, Richland, WA, 99352-7777, United States",
+            "phone": "509-628-0990",
+            "email": "test",
+            "services": "Distribution Center Nearby",
+            "history": "test",
+            "ordinance": "test",
+            "session": "test",
+            "closure": "test"
+        },
+        {
+            "name": "Dallas Texas",
+            "address": "6363 Willow Ln, Dallas, TX, 75230-2227, United States",
+            "phone": "972-991-1273",
+            "email": "test",
+            "services": "Clothing rental available, Distribution Center Nearby",
+            "history": "test",
+            "ordinance": "test",
+            "session": "test",
+            "closure": "test"
+        },
+        {
+            "name": "Fort Lauderdale Florida",
+            "address": "3901 SW 154th Ave, Davie, FL, 33331, United States",
+            "phone": "954-382-8390",
+            "email": "test",
+            "services": "N/A",
+            "history": "test",
+            "ordinance": "test",
+            "session": "test",
+            "closure": "test"
+        },
+        {
+            "name": "Hartford Connecticut",
+            "address": "2 Central Wy, Farmington, CT, 06032, United States",
+            "phone": "860-773-7200",
+            "email": "test",
+            "services": "Distribution center nearby",
+            "history": "test",
+            "ordinance": "test",
+            "session": "test",
+            "closure": "test"
+        }
+    ]
+}
