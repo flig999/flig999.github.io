@@ -10,7 +10,8 @@
             "ordinance": "We're open for walk in Ordinances from 5am to 8pm Mon-Sat",
             "session": "Call for more information",
             "closure": "Temple closed today for any walk-ins",
-            "image": "columbia_river_temple_lds.jpg"
+            "image": "columbia_river_temple_lds.jpg",
+            "weather": "ColumbiaWeather"
         },
         {
             "name": "Dallas Texas",
@@ -22,7 +23,8 @@
             "ordinance": "We're open for walk in Ordinances from 6am to 8pm Mon-Sat",
             "session": "Call for more information",
             "closure": "Temple closed today",
-            "image": "dallas_texas_temple.jpeg"
+            "image": "dallas_texas_temple.jpeg",
+            "weather": "DallasWeather"
         },
         {
             "name": "Fort Lauderdale Florida",
@@ -34,7 +36,8 @@
             "ordinance": "We're open for walk in Ordinances from 7am to 9pm Mon-Sat",
             "session": "Call for more information",
             "closure": "Temple closed today",
-            "image": "fort_lauderdale_florida_temple_lighted.jpeg"
+            "image": "fort_lauderdale_florida_temple_lighted.jpeg",
+            "weather": "FortWeather"
         },
         {
             "name": "Hartford Connecticut",
@@ -46,7 +49,8 @@
             "ordinance": "We're open for walk in Ordinances from 8am to 11pm Mon-Sat",
             "session": "Call for more information",
             "closure": "Temple closed today unless scheduled ahead",
-            "image": "hartford_connecticut_temples_exterior_steeples_clouds.jpeg"
+            "image": "hartford_connecticut_temples_exterior_steeples_clouds.jpeg",
+            "weather": "HartWeather"
         }
     ]
 }

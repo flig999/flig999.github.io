@@ -91,6 +91,11 @@ section{
 	border: 1px solid;
 	border-radius: 15px;
 	margin: 10px;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr;
+	justify-items: center;
+	align-items: center;
 }
 section h2{
 	margin-left: 5px;
@@ -101,10 +106,34 @@ section p{
 footer h2{
 	text-align: center;
 }
-section image{
-	float: right;
-}
 
+img{
+	width: 100%;
+	max-width: 100%;
+}
+#CTA{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+}
+#CTAimage{
+	grid-column: 1/-1;
+    grid-row: 1/-1;
+}
+#CTAtext{
+	grid-column: 1/-1;
+	grid-row: 1/-1;
+}
+#CTAtext a:hover{
+	color: whitesmoke;
+}
+#CTAtext a{
+	color:rgb(194, 179, 230);
+}
+.templeimage{
+	max-width: 90%;
+	max-height: 90%;
+}
 @media only screen and (min-width: 32.5em) {
     .navigation {
 		display: flex;
@@ -121,6 +150,10 @@ section image{
 	}
 	nav a{
 	 font-size: 20px;
+	}
+	section{
+		grid-template-rows: 1fr;
+		grid-template-columns: 1fr 1fr;
 	}
 
 }
