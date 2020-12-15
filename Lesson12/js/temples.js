@@ -40,19 +40,53 @@ fetch(templeURL)
             ordinance.textContent = "Ordinance Schedule: " + temples[i].ordinance;
             session.textContent = "Session Schedule: " + temples[i].session;
             closure.textContent = "Closure Schedule: " + temples[i].closure;
-            weather.textContent = "Current Temperature: "
+            weather.textContent = "Current Weather: "
             image.setAttribute('src', 'images/' + temples[i].image);
             image.setAttribute('class', 'templeimage');
 
-            fetch(temples[i].weather)
-            .then((response) => response.json())
+            if(temples[i].weather == "DallasWeather"){
+                fetch(DallasWeather)
+                .then((response) => response.json())
+
+                .then((jsObject) => {
+                    temp.textContent = "Temperature: " + Math.round((((jsObject.main.temp) - 273.15) * 9/5 + 32)*100)/100 + "F";
+                    humid.textContent = "Humidity: " + jsObject.main.humidity + "%";
+                    wind.textContent = "Windspeed: " + jsObject.wind.speed + "mph";
+                });
+            }
+            else if(temples[i].weather == "ColumbiaWeather"){
+                fetch(ColumbiaWeather)
+                .then((response) => response.json())
+
+                .then((jsObject) => {
+                    temp.textContent = "Temperature: " + Math.round((((jsObject.main.temp) - 273.15) * 9/5 + 32)*100)/100 + "F";
+                    humid.textContent = "Humidity: " + jsObject.main.humidity + "%";
+                    wind.textContent = "Windspeed: " + jsObject.wind.speed + "mph";
+                });
+            }
+            else if(temples[i].weather == "FortWeather"){
+                fetch(FortWeather)
+                .then((response) => response.json())
+
+                .then((jsObject) => {
+                    temp.textContent = "Temperature: " + Math.round((((jsObject.main.temp) - 273.15) * 9/5 + 32)*100)/100 + "F";
+                    humid.textContent = "Humidity: " + jsObject.main.humidity + "%";
+                    wind.textContent = "Windspeed: " + jsObject.wind.speed + "mph";
+                });
+            }
+            else if(temples[i].weather == "HartWeather"){
+                fetch(HartWeather)
+                .then((response) => response.json())
+
+                .then((jsObject) => {
+                    temp.textContent = "Temperature: " + Math.round((((jsObject.main.temp) - 273.15) * 9/5 + 32)*100)/100 + "F";
+                    humid.textContent = "Humidity: " + jsObject.main.humidity + "%";
+                    wind.textContent = "Windspeed: " + jsObject.wind.speed + "mph";
+                });
+            }
+            
   
-            .then((jsObject) => {
-                console.log(jsObject);
-                temp.textContent = "Temperature: " + Math.round((((jsObject.main.temp) - 273.15) * 9/5 + 32)*100)/100;
-                humid.textContent = "Humidity: " + jsObject.main.humidity;
-                wind.textContent = "Windspeed: " + jsObject.wind.speed;
-            });
+            
 
             text.appendChild(temple);
             text.appendChild(address);

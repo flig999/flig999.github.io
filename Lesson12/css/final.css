@@ -134,6 +134,9 @@ img{
 	max-width: 90%;
 	max-height: 90%;
 }
+#picGrid{
+	display: grid;
+}
 @media only screen and (min-width: 32.5em) {
     .navigation {
 		display: flex;
@@ -154,6 +157,10 @@ img{
 	section{
 		grid-template-rows: 1fr;
 		grid-template-columns: 1fr 1fr;
+	}
+	#picGrid{
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
 	}
 
 }
@@ -186,5 +193,9 @@ img{
 	}
 	footer{
 		max-width: 1000px;
+	}
+	#picGrid{
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
 	}
 }
